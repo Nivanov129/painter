@@ -23,9 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  flutter_painter:
-    path: ../
+  flutter_painter: ^1.0.1
   phosphor_flutter: ^1.4.0
 
 dev_dependencies:
