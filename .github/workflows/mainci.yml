@@ -7,13 +7,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macOS-10.15, windows-2019, ubuntu-18.04]
+        os: [macOS-latest, windows-latest, ubuntu-latest]
         include: 
-        - os: macOS-10.15
+        - os: macOS-latest
           TARGET: macos  
-        - os: ubuntu-18.04
+        - os: ubuntu-latest
           TARGET: linux     
-        - os: windows-2019
+        - os: windows-latest
           TARGET: windows
       # Disable fail-fast; we want results from all OSes even if one fails.
       fail-fast: false
